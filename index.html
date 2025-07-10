@@ -3,65 +3,68 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wennovation Hub</title>
-    <!-- Bootstrap CSS -->
+    <title>wennovation hub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/style.css">
- 
+    <link rel="stylesheet" href="css/style.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+     <link rel="icon" href="images/logo.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
-        <div class="container px-4">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="images/logo.png" alt="Logo" style="width: 60px;" class="me-2" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+ <!-- Bootstrap Responsive Navbar -->
+<nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+  <div class="container px-4">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" alt="Logo" style="width: 60px;" class="me-2" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="/">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark fw-semibold" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Co-working and Training</a></li>
-                            <li><a class="dropdown-item" href="#">Startups/SMEs Business Services</a></li>
-                            <li><a class="dropdown-item" href="#">Private and Public Sector Innovation</a></li>
-                            <li><a class="dropdown-item" href="#">Partnerships</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Become a wennovator</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="/impact">Impact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="/our-work">Our Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-semibold" href="/contact">Contact</a>
-                    </li>
-                </ul>
-                <a href="#" class="custom-outline btn btn-md mt-3 mt-lg-0 ms-lg-3">Get Started</a>
-            </div>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="index.html">Home</a>
+        </li>
 
-    <!-- Video Banner -->
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark fw-semibold" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="Services.html">Co-working and Training</a></li>
+            <li><a class="dropdown-item" href="#">Startups/SMEs Business Services</a></li>
+            <li><a class="dropdown-item" href="#">Private and Public Sector Innovation</a></li>
+            <li><a class="dropdown-item" href="#">Partnerships</a></li><hr/>
+            <li><a class="dropdown-item" href="Wennovator.html">Become a wennovator</a></li>
+            <!-- Add more items as needed -->
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="impact.html">Impact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="ourwork.html">Our Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <a href="wennovator.html" class="custom-outline btn btn-md mt-3 mt-lg-0 ms-lg-3">Get Started</a>
+    </div>
+  </div>
+</nav>
+    <!-- Fullscreen Video Banner -->
     <header class="video-header">
         <video autoplay muted loop playsinline class="video-bg">
-            <source src="images/video.mp4" type="video/mp4">
+            <source src="images/video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         <div class="overlay"></div>
@@ -69,7 +72,7 @@
             <div class="text-white">
                 <h3 class="display-4 fw-bold">An African Frontier Enterprise<br/> Support Organization — Enabling Sustainable Ventures</h3>
                 <p class="lead">Grow businesses. Create jobs. Drive prosperity.</p>
-                <a href="#" class="btn btn-lg mt-3 text-white" style="background-color: #f79f4a;">Consult with Us</a>
+                <a href="/wennovation" class="btn btn-lg mt-3 text-white" style="background-color: #f79f4a;">Consult with Us</a>
                 <a href="/bookings" class="btn btn-lg custom-outline mt-3">Book a Space</a>
             </div>
         </div>
@@ -77,6 +80,12 @@
 
     <!-- Who We Are Section -->
     <section id="who-we-are" class="py-5 bg-light position-relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="position-absolute top-0 start-0 w-100 h-100">
+            <div class="circle-shape shape1 opacity-10 rounded-circle position-absolute"></div>
+            <div class="circle-shape bg-secondary opacity-10 rounded-circle position-absolute"></div>
+        </div>
+        
         <div class="container position-relative">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
@@ -108,7 +117,9 @@
                             </div>
                         </div>
                         
-                        <p class="lead mb-4">⁠Wennovation Hub is a venture development company that supports early stage startups and growing teams across emerging sectors, giving them access to incubation, acceleration, investment opportunities, market access and mentorship to build thriving startups.</p>
+                        <p class="lead mb-4">⁠Wennovation Hub is a venture development company that supports early stage startups and growing teams across emerging sectors,  giving them access to incubation, acceleration, investment opportunities, market access and mentorship to build thriving startups.</p>
+                        
+                       
                     </div>
                 </div>
                 
@@ -125,7 +136,9 @@
                                     </div>
                                     <p class="mb-0 fst-italic">"We are Empowering African Entrepreneurs and building commercially viable businesses."</p>
                                 </div>
-                                <button class="btn custom-outline px-4">Meet Our Team</button>
+                                <a href="/meet-our-team">
+                                    <button class="btn custom-outline px-4">Meet Our Team</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -134,37 +147,37 @@
             
             <!-- Stats counter -->
             <div class="row mt-5 g-4">
-                <div class="col-md-3 col-6">
+                <div class="col-md-4 col-6">
                     <div class="text-center p-3 bg-white rounded-3 shadow-sm">
-                        <h3 class="text-success fw-bold mb-1">50+</h3>
+                        <h3 class="text-success fw-bold mb-1" data-target="">50+</h3>
                         <p class="text-muted mb-0">Innovation Programs</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-4 col-6">
                     <div class="text-center p-3 bg-white rounded-3 shadow-sm">
-                        <h3 class="text-success fw-bold mb-1">20,000+</h3>
+                        <h3 class="text-success fw-bold mb-1" data-target="">20,000+</h3>
                         <p class="text-muted mb-0">People Empowered</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-4 col-6">
                     <div class="text-center p-3 bg-white rounded-3 shadow-sm">
                         <h3 class="text-success fw-bold mb-1">40%</h3>
                         <p class="text-muted mb-0">Women-Led Startups</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-4 col-6">
                     <div class="text-center p-3 bg-white rounded-3 shadow-sm">
                         <h3 class="text-success fw-bold mb-1">450+</h3>
                         <p class="text-muted mb-0">Startup Teams Supported</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-4 col-6">
                     <div class="text-center p-3 bg-white rounded-3 shadow-sm">
                         <h3 class="text-success fw-bold mb-1">$15m+</h3>
                         <p class="text-muted mb-0">Raised by Startups Directly</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-4 col-6">
                     <div class="text-center p-3 bg-white rounded-3 shadow-sm">
                         <h3 class="text-success fw-bold mb-1">180+</h3>
                         <p class="text-muted mb-0">Diverse Portfolio Startups</p>
@@ -174,11 +187,14 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services-section py-5">
+    <!-- Partner Modals -->
+    <div class="modal fade" id="partnerModal1" tabindex="-1" aria-hidden="true">
+        <!-- Modal content would go here -->
+    </div>
+ <section class="services-section py-5">
         <div class="container">
             <div class="section-title text-center mb-5">
-                <h2>Our Services</h2>
+                <h2 style="display-5 fw-bold"><span class="text-gradient">Our</span> Services</h2>
                 <p>At Wennovation Hub, we are committed to empowering innovation, accelerating business growth, and creating meaningful impact through tailored services designed for entrepreneurs, startups, SMEs, and institutions.</p>
             </div>
             
@@ -243,15 +259,16 @@
     </section>
 
     <!-- Partners Section -->
-    <section id="partners" class="partners-section py-6">
-        <div class="container">
-            <div class="section-header text-center mb-5">
-                <span class="badge bg-warning bg-opacity-10 text-warning px-3 py-2 mb-3 rounded-pill">TRUSTED BY INDUSTRY LEADERS</span>
-                <h2 class="display-5 fw-bold mb-3">Our <span class="text-orange">Portfolio</span></h2>
-                <p class="lead text-muted mx-auto" style="max-width: 700px;">As the pioneer innovation hub in Nigeria, we have propelled numerous startups to success and continue to do so across various sectors.</p>
-            </div>
+   <!-- Partners Section -->
+<section id="partners" class="partners-section py-6">
+  <div class="container">
+    <div class="section-header text-center mb-6">
+      
+      <h2 class="display-5 fw-bold mb-3">Our <span class="text-gradient">Portfolio</span></h2>
+      <p class="lead text-muted mx-auto" style="max-width: 700px">As the pioneer innovation hub in Nigeria, we have propelled numerous startups to success and continue to do so across various sectors.</p>
+    </div>
 
-            <!-- Logo Grid with Hover Effects -->
+    <!-- Logo Grid with Hover Effects -->
     <div class="logo-grid">
       <div class="logo-grid-inner">
         <!-- Partner 1 -->
@@ -259,33 +276,46 @@
           <div class="logo-card-inner">
             <div class="logo-img">
                 <h5>Asusu</h5>
-              <!-- @* <img src="https://logo.clearbit.com/google.com" alt="Google" class="grayscale"> *@ -->
+             
             </div>
             <div class="logo-overlay">
               <div class="overlay-content">
                 <h5>Asusu</h5>
                 <p class="small">enables digitization & financial inclusiveness of cooperatives</p>
-                <!-- @* <span class="badge bg-primary">Since 2018</span> *@ -->
+          
               </div>
             </div>
           </div>
         </div>
 
-    
-    
+        <!-- Partner 2 -->
+        <div class="logo-card">
+          <div class="logo-card-inner">
+            <div class="logo-img">
+                <h5>Crop2Cash</h5>
+            </div>
+            <div class="logo-overlay">
+              <div class="overlay-content">
+                <h5>Crop2Cash</h5>
+                <p class="small">making formal, much-needed capital financing possible for farmers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partner 3 -->
+       
 
         <!-- Partner 4 -->
         <div class="logo-card">
           <div class="logo-card-inner">
             <div class="logo-img">
                 <h5>Afrimash</h5>
-              <!-- @* <img src="https://logo.clearbit.com/amazon.com" alt="Amazon Web Services" class="grayscale"> *@ -->
             </div>
             <div class="logo-overlay">
               <div class="overlay-content">
                 <h5>Afrimash</h5>
                 <p class="small">online destination for farmers looking for poultry, fish etc</p>
-                <!-- @* <span class="badge  bg-warning">Since 2017</span> *@ -->
               </div>
             </div>
           </div>
@@ -296,13 +326,13 @@
           <div class="logo-card-inner">
             <div class="logo-img">
                 <h5>ProNov</h5>
-              <!-- @* <img src="https://logo.clearbit.com/ibm.com" alt="IBM" class="grayscale"> *@ -->
+            
             </div>
             <div class="logo-overlay">
               <div class="overlay-content">
                 <h5>ProNov</h5>
                 <p class="small">applies digital tech to stock inventory mgmt.</p>
-                <!-- @* <span class="badge bg-warning">Since 2021</span> *@ -->
+                
               </div>
             </div>
           </div>
@@ -313,23 +343,27 @@
           <div class="logo-card-inner">
             <div class="logo-img">
                 <h5>FarmMonie</h5>
-              <!-- @* <img src="https://logo.clearbit.com/adobe.com" alt="Adobe" class="grayscale"> *@ -->
+             
             </div>
             <div class="logo-overlay">
               <div class="overlay-content">
                 <h5>FarmMonie</h5>
                 <p class="small">build and operate network of smart farms</p>
-                <!-- @* <span class="badge bg-warning">Since 2020</span> *@ -->
+              
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-        </div>
-    </section>
 
-    <section class="track-record">
+    <!-- View All Button -->
+   
+  </div>
+</section>
+
+
+ <section class="track-record">
         <div class="container">
             <div class="section-heading">
                 <h2>Our Topnotch Partners</h2>
@@ -342,7 +376,7 @@
                 <!-- Client 1 -->
                 <div class="client-marker">
                     <span class="year-badge">2023</span>
-                    <a href="#" target="_blank" class="client-link">
+                    <a href="https://google.com" target="_blank" class="client-link">
                         <div class="client-logo-container">
                             <img src="images/partners/partner1.png" alt="Google" class="client-logo">
                         </div>
@@ -352,7 +386,7 @@
                 <!-- Client 2 -->
                 <div class="client-marker">
                     <span class="year-badge">2022</span>
-                    <a href="#" target="_blank" class="client-link">
+                    <a href="https://microsoft.com" target="_blank" class="client-link">
                         <div class="client-logo-container">
                             <img src="images/partners/partner2.png" alt="Microsoft" class="client-logo">
                         </div>
@@ -362,7 +396,7 @@
                 <!-- Client 3 -->
                 <div class="client-marker">
                     <span class="year-badge">2021</span>
-                    <a href="#" target="_blank" class="client-link">
+                    <a href="https://apple.com" target="_blank" class="client-link">
                         <div class="client-logo-container">
                             <img src="images/partners/partner3.png" alt="Apple" class="client-logo">
                         </div>
@@ -372,7 +406,7 @@
                 <!-- Client 4 -->
                 <div class="client-marker">
                     <span class="year-badge">2020</span>
-                    <a href="#" target="_blank" class="client-link">
+                    <a href="https://amazon.com" target="_blank" class="client-link">
                         <div class="client-logo-container">
                             <img src="images/partners/partner4.png" alt="Amazon" class="client-logo">
                         </div>
@@ -382,7 +416,7 @@
                 <!-- Client 5 -->
                 <div class="client-marker">
                     <span class="year-badge">2019</span>
-                    <a href="#" target="_blank" class="client-link">
+                    <a href="https://tesla.com" target="_blank" class="client-link">
                         <div class="client-logo-container">
                             <img src="images/partners/partner5.png" alt="Tesla" class="client-logo">
                         </div>
@@ -392,7 +426,7 @@
                 <!-- Client 6 -->
                 <div class="client-marker">
                     <span class="year-badge">2018</span>
-                    <a href="#" target="_blank" class="client-link">
+                    <a href="https://facebook.com" target="_blank" class="client-link">
                         <div class="client-logo-container">
                             <img src="images/partners/partner6.png" alt="Facebook" class="client-logo">
                         </div>
@@ -402,7 +436,7 @@
                 <!-- Client 7 -->
                 <div class="client-marker">
                     <span class="year-badge">2017</span>
-                    <a href="#" target="_blank" class="client-link">
+                    <a href="https://netflix.com" target="_blank" class="client-link">
                         <div class="client-logo-container">
                             <img src="images/partners/partner7.png" alt="Netflix" class="client-logo">
                         </div>
@@ -412,19 +446,9 @@
                 <!-- Client 8 -->
                 <div class="client-marker">
                     <span class="year-badge">2016</span>
-                    <a href="#" target="_blank" class="client-link">
+                    <a href="https://spotify.com" target="_blank" class="client-link">
                         <div class="client-logo-container">
                             <img src="images/partners/partner8.png" alt="Spotify" class="client-logo">
-                        </div>
-                    </a>
-                </div>
-
-                <!-- Client 9 -->
-                <div class="client-marker">
-                    <span class="year-badge">2018</span>
-                    <a href="#" target="_blank" class="client-link">
-                        <div class="client-logo-container">
-                            <img src="images/partners/partner9.png" alt="Facebook" class="client-logo">
                         </div>
                     </a>
                 </div>
@@ -436,9 +460,13 @@
         </div>
     </section>
 
-    <section class="gallery-section">
+
+
+ <section class="gallery-section">
         <div class="container">
+         
             <div class="gallery-container">
+          
                 <div class="gallery-stack">
                     <!-- Image 1 -->
                     <img src="images/gallery1.jpg" alt="Gallery Image 1" class="gallery-img">
@@ -460,32 +488,30 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer-section bg-dark text-white pt-6 pb-4">
+<footer class="footer-section bg-dark text-white pt-6 pb-4">
         <div class="container">
             <div class="row g-5 mt-3">
                 <!-- Company Info -->
                 <div class="col-lg-4">
                     <div class="footer-brand mb-4">
-                        <img src="images/logo.png" alt="Logo" style="width: 60px;" class="me-2" />
+                        <img src="images/footer-logo.png" alt="Logo" style="width: 60px;" class="me-2" />
                         <p class="text-white">Empowering the next generation of innovators through collaboration and cutting-edge technology.</p>
                     </div>
                     <div class="social-links mb-4">
                         <h5 class="text-white mb-3">Connect With Us</h5>
                         <div class="d-flex gap-3">
-                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/wennovation?s=11" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/wennovationhub/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/wennovationhub?mibextid=kFxxJD" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.instagram.com/wennovation.hub?igsh=YjUyZDU3ZDFjeTBi" class="social-icon"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
                     <div class="newsletter">
                         <h5 class="text-white mb-3">Stay Updated</h5>
                         <form class="d-flex">
                             <input type="email" class="form-control rounded-0" placeholder="Your email">
-                            <button class="btn btn-success rounded-0" type="submit">
+                            <button class="btn btn-success rounded-0" style="max-height: fit-content;" type="submit">
                                 <i class="fas fa-paper-plane"></i>
                             </button>
                         </form>
@@ -496,12 +522,12 @@
                 <div class="col-lg-2 col-md-4">
                     <h5 class="text-white mb-4">Quick Links</h5>
                     <ul class="footer-links list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="impact">Impact</a></li>
+                        <li><a href="our-works">Our Works</a></li>
+                        <li><a href="meet-our-team">Our Team</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -562,12 +588,16 @@
             <i class="fas fa-arrow-up"></i>
         </button>
     </footer>
-
-    <!-- Scripts -->
+     <script src="/js/script.js"></script>
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+ 
     
-   <script src="js/script.js"></script>
+    <!-- @await RenderSectionAsync("Scripts", required: false) -->
 </body>
 </html>

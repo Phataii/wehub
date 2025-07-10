@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wennovation hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css" asp-append-version="true" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+     <link rel="icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+ <!-- Bootstrap Responsive Navbar -->
+<nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+  <div class="container px-4">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.png" alt="Logo" style="width: 60px;" class="me-2" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="index.html">Home</a>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark fw-semibold" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li><a class="dropdown-item" href="Services.html">Co-working and Training</a></li>
+            <li><a class="dropdown-item" href="#">Startups/SMEs Business Services</a></li>
+            <li><a class="dropdown-item" href="#">Private and Public Sector Innovation</a></li>
+            <li><a class="dropdown-item" href="#">Partnerships</a></li><hr/>
+            <li><a class="dropdown-item" href="Wennovator.html">Become a wennovator</a></li>
+            <!-- Add more items as needed -->
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="impact.html">Impact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="ourwork.html">Our Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark fw-semibold" href="contact.html">Contact</a>
+        </li>
+      </ul>
+
+      <a href="wennovator.html" class="custom-outline btn btn-md mt-3 mt-lg-0 ms-lg-3">Get Started</a>
+    </div>
+  </div>
+</nav>
+ <!-- Services Header -->
+    <header class="services-header">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>At Wennovation Hub, we are committed to empowering innovation, accelerating business growth, and creating meaningful impact through tailored services designed for entrepreneurs, startups, SMEs, and institutions.</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <!-- Service 1: Co-working Spaces & Trainings -->
+            <div class="service-card" id="card1">
+                <div class="service-number">1</div>
+                <div class="service-header" onclick="toggleService(1)">
+                    <h2>Co-working Spaces & Trainings</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="service-content" id="service-1">
+                    <p class="service-intro">Your Launchpad for Innovation and Collaboration</p>
+                    <p>At Wennovation Hub, our co-working spaces are more than just desks and chairs, they're vibrant communities where founders, freelancers, creatives, and remote teams connect, collaborate, and thrive. Whether you're launching a startup, working independently, or looking for a creative space to build your idea, our hub is designed to support your journey.</p>
+                    
+                    <div class="what-we-offer">
+                        <h3 class="section-title">What We Offer</h3>
+                        <ul class="custom-list">
+                            <li><strong>Flexible membership options</strong> – daily, weekly, and monthly plans to fit your workflow.</li>
+                            <li><strong>Modern workspaces</strong> – fully equipped with high-speed internet, stable power, and serene work environments.</li>
+                            <li><strong>Training and capacity-building programs</strong> – covering entrepreneurship, digital skills, business strategy, and soft skills.</li>
+                            <li><strong>Community networking events</strong> – including pitch sessions, founders' clinics, and masterclasses with experts.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="who-its-for">
+                        <h3 class="section-title">Who It's For</h3>
+                        <ul class="custom-list">
+                            <li><strong>Startup founders</strong> and small teams</li>
+                            <li><strong>Freelancers</strong> and remote workers</li>
+                            <li><strong>Young professionals</strong> and aspiring entrepreneurs</li>
+                            <li><strong>NGOs</strong> and social innovators</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefits">
+                        <h3 class="section-title">Benefits</h3>
+                        <ul class="custom-list">
+                            <li><strong>Affordable</strong>, reliable work environment</li>
+                            <li>Access to <strong>knowledge-sharing communities</strong></li>
+                            <li>Opportunities to join <strong>Wennovation programs</strong></li>
+                            <li><strong>Mentorship</strong> and peer support</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="btn">Book a space <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Service 2: Startup & SME Business Services -->
+            <div class="service-card">
+                <div class="service-number">2</div>
+                <div class="service-header" onclick="toggleService(2)">
+                    <h2>Startup & SME Business Services</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="service-content" id="service-2">
+                    <p class="service-intro">We Help You Build, Validate, and Grow Your Business</p>
+                    <p>Wennovation Hub provides structured support to help startups and small businesses thrive, from ideation and MVP development to customer acquisition, fundraising, and scale.</p>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Proven track record:</strong> Over 450 startups supported with access to mentors, investors, and strategic networks.</p>
+                    </div>
+                    
+                    <div class="what-we-offer">
+                        <h3 class="section-title">Our Core Offerings</h3>
+                        <ul class="custom-list">
+                            <li><strong>Pre-incubation & Incubation Programs</strong> – For early-stage founders seeking to build viable business models and MVPs.</li>
+                            <li><strong>Acceleration Programs</strong> – For growing startups looking to scale, expand to new markets, or raise investment.</li>
+                            <li><strong>Business Advisory & Coaching</strong> – One-on-one support to help you clarify your strategy, navigate challenges, and stay investor-ready.</li>
+                            <li><strong>Investment Readiness Support</strong> – Get help with developing your pitch deck, financials, projections, and business plans.</li>
+                            <li><strong>Startup Diagnostics</strong> – We assess your current business health and help you identify your growth path.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="who-its-for">
+                        <h3 class="section-title">Who It's For</h3>
+                        <ul class="custom-list">
+                            <li><strong>Early-stage founders</strong> with an idea or MVP</li>
+                            <li><strong>SMEs</strong> looking to grow operations or enter new markets</li>
+                            <li><strong>Startups</strong> preparing for fundraising</li>
+                            <li><strong>Youth-led or women-led</strong> enterprises</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="btn">Apply to our programs <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Service 3: Public & Private Sector Innovation -->
+            <div class="service-card">
+                <div class="service-number">3</div>
+                <div class="service-header" onclick="toggleService(3)">
+                    <h2>Public & Private Sector Innovation</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="service-content" id="service-3">
+                    <p class="service-intro">Driving Social and Economic Impact Through Innovation</p>
+                    <p>Wennovation Hub partners with public institutions, donor organizations, and corporate entities to design, implement, and scale impactful innovation programs that address pressing socio-economic challenges.</p>
+                    <p>We are experts in innovation program design, implementation, youth empowerment, digital transformation, and ecosystem building.</p>
+                    
+                    <div class="what-we-offer">
+                        <h3 class="section-title">What We Do</h3>
+                        <ul class="custom-list">
+                            <li><strong>Innovation Challenge Design & Management</strong> – Co-creating open calls and hackathons that generate viable solutions to sectoral problems.</li>
+                            <li><strong>Youth & Women Empowerment Programs</strong> – Training and supporting underrepresented groups with entrepreneurship and employability skills.</li>
+                            <li><strong>Policy & Ecosystem Advisory</strong> – Working with governments and stakeholders to foster enabling environments for innovation.</li>
+                            <li><strong>Research & Implementation Support</strong> – Conducting market studies, user research, and managing project execution end-to-end.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="who-its-for">
+                        <h3 class="section-title">Target Collaborators</h3>
+                        <ul class="custom-list">
+                            <li><strong>Federal and state</strong> governments</li>
+                            <li><strong>Development agencies</strong> and donor organizations</li>
+                            <li><strong>NGOs</strong> and impact-driven corporates</li>
+                            <li><strong>International</strong> organizations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefits">
+                        <h3 class="section-title">Impact Snapshot</h3>
+                        <div class="impact-snapshot">
+                            <div class="impact-grid">
+                                <div class="impact-item">
+                                    <div class="impact-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="impact-text">50,000+ youth trained</div>
+                                </div>
+                                <div class="impact-item">
+                                    <div class="impact-icon">
+                                        <i class="fas fa-female"></i>
+                                    </div>
+                                    <div class="impact-text">150+ female-led businesses supported</div>
+                                </div>
+                                <div class="impact-item">
+                                    <div class="impact-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="impact-text">12,500+ jobs created</div>
+                                </div>
+                                <div class="impact-item">
+                                    <div class="impact-icon">
+                                        <i class="fas fa-handshake"></i>
+                                    </div>
+                                    <div class="impact-text">Collaboration with GIZ, Mastercard Foundation</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn">Partner with us <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Service 4: Partnerships -->
+            <div class="service-card">
+                <div class="service-number">4</div>
+                <div class="service-header" onclick="toggleService(4)">
+                    <h2>Partnerships</h2>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="service-content" id="service-4">
+                    <p class="service-intro">Collaborate with Us to Power Africa's Innovation Future</p>
+                    <p>Our strategic partnerships fuel the impact we create across Nigeria and beyond. Wennovation Hub works with a wide range of organizations to design custom programs, empower entrepreneurs, and advance inclusive innovation.</p>
+                    <p>Whether you are looking to invest in local talent, support community development, or accelerate tech adoption, we are your trusted on-ground partner.</p>
+                    
+                    <div class="what-we-offer">
+                        <h3 class="section-title">Types of Partnerships</h3>
+                        <ul class="custom-list">
+                            <li><strong>Corporate Innovation Partnerships</strong> – Co-create sector-specific challenges or innovation labs.</li>
+                            <li><strong>Development & Impact Partnerships</strong> – Design programs that empower vulnerable populations, youth, and women.</li>
+                            <li><strong>Academic & Research Collaborations</strong> – Connect with the next generation of problem-solvers and changemakers.</li>
+                            <li><strong>Event & Knowledge-Sharing Partnerships</strong> – Leverage our ecosystem to host meetups, demo days, or thought leadership events.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="benefits">
+                        <h3 class="section-title">Why Partner With Us</h3>
+                        <ul class="custom-list">
+                            <li><strong>Nigeria's longest-standing</strong> innovation hub</li>
+                            <li><strong>Presence across multiple locations</strong> and deep community roots</li>
+                            <li><strong>Data-driven approach</strong> to program design and delivery</li>
+                            <li>Access to a <strong>diverse pipeline</strong> of startups, mentors, and thought leaders</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#" class="btn">Contact us <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="footer-section bg-dark text-white pt-6 pb-4">
+        <div class="container">
+            <div class="row g-5 mt-3">
+                <!-- Company Info -->
+                <div class="col-lg-4">
+                    <div class="footer-brand mb-4">
+                        <img src="images/footer-logo.png" alt="Logo" style="width: 60px;" class="me-2" />
+                        <p class="text-white">Empowering the next generation of innovators through collaboration and cutting-edge technology.</p>
+                    </div>
+                    <div class="social-links mb-4">
+                        <h5 class="text-white mb-3">Connect With Us</h5>
+                        <div class="d-flex gap-3">
+                            <a href="https://x.com/wennovation?s=11" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/wennovationhub/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/wennovationhub?mibextid=kFxxJD" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/wennovation.hub?igsh=YjUyZDU3ZDFjeTBi" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="newsletter">
+                        <h5 class="text-white mb-3">Stay Updated</h5>
+                        <form class="d-flex">
+                            <input type="email" class="form-control rounded-0" placeholder="Your email">
+                            <button class="btn btn-success rounded-0" style="max-height: fit-content;" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="impact">Impact</a></li>
+                        <li><a href="our-works">Our Works</a></li>
+                        <li><a href="meet-our-team">Our Team</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-4">Services</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">Co-working and Training</a></li>
+                        <li><a href="#">Startups/SMEs Business Services</a></li>
+                        <li><a href="#">Private and Public Sector Innovation</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-4">Contact Us</h5>
+                    <ul class="contact-info list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt text-success me-2"></i>
+                            <span>2a Loius Solomon Close, Victoria Island Lagos.</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone-alt text-success me-2"></i>
+                            <span>+234 912 797 2803</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope text-success me-2"></i>
+                            <span>Support@wennovationhub.org</span>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-clock text-success me-2"></i>
+                            <span>Mon-Fri: 9AM - 6PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-5 border-secondary">
+
+            <!-- Copyright & Legal -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="legal-links mb-0">&copy; 2025 WennovationHub. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="legal-links list-inline mb-0">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="btn btn-warning rounded-circle back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+     <script src="/js/script.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+ 
+    
+    <!-- @await RenderSectionAsync("Scripts", required: false) -->
+</body>
+</html>
