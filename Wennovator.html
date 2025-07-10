@@ -294,3 +294,30 @@
         });
     });
 </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+    $('.wennovator-form').on('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        const form = $(this);
+        const formData = form.serialize(); // Serialize the form data
+
+        $.ajax({
+            url: 'https://euifinmanager.com.ng/api/v1/booking', // Replace with your API endpoint
+            type: 'POST',
+            data: formData,
+            success: function (response) {
+                alert('Application submitted successfully!');
+                // Optionally reset the form
+                form[0].reset();
+            },
+            error: function (xhr, status, error) {
+                alert('There was an error submitting the form. Please try again.');
+                console.error(xhr.responseText);
+            }
+        });
+    });
+});
+</script>

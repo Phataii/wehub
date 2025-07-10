@@ -232,12 +232,12 @@
                 <div class="col-lg-2 col-md-4">
                     <h5 class="text-white mb-4">Quick Links</h5>
                     <ul class="footer-links list-unstyled">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="services">Services</a></li>
-                        <li><a href="impact">Impact</a></li>
-                        <li><a href="our-works">Our Works</a></li>
-                        <li><a href="meet-our-team">Our Team</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="impact.html">Impact</a></li>
+                        <li><a href="OurWork.html">Our Works</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
@@ -306,7 +306,32 @@
     <!-- Owl Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Custom JS -->
- 
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+  $('#bookingForm').on('submit', function (e) {
+    e.preventDefault(); // Stop default form submission
+
+    const form = $(this);
+    const formData = form.serialize(); // Serialize all form fields
+
+    $.ajax({
+      url: '/api/booking', // ✅ Update to your real API endpoint
+      type: 'POST',
+      data: formData,
+      success: function (response) {
+        alert('Booking request submitted successfully!');
+        form[0].reset(); // Optional: Reset the form on success
+      },
+      error: function (xhr, status, error) {
+        alert('Something went wrong while submitting. Please try again.');
+        console.error(xhr.responseText);
+      }
+    });
+  });
+});
+</script>
+
     
     <!-- @await RenderSectionAsync("Scripts", required: false) -->
 </body>
