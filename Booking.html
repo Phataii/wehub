@@ -316,7 +316,7 @@ $(document).ready(function () {
     const formData = form.serialize(); // Serialize all form fields
 
     $.ajax({
-      url: '/api/booking', // ✅ Update to your real API endpoint
+      url: 'https://euifinmanager.com.ng/api/v1/booking', // ✅ Update to your real API endpoint
       type: 'POST',
       data: formData,
       success: function (response) {
